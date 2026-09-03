@@ -57,7 +57,12 @@ namespace ParlikeWebApi.Models
                         .WithMany(t=>t.TeacherCourses)
                         .HasForeignKey(tc=>tc.TeacherId)
                         .OnDelete(DeleteBehavior.Restrict);
-
+            //set composit key for CourseCatogory table
+            modelBuilder.Entity<CourseCatogory>()
+                        .HasKey(cc=> new {cc.CatogoryId , cc.CourseId});
+            //set composit key for CourseCatogory table
+            modelBuilder.Entity<TeacherCourse>()
+                        .HasKey(tc=> new {tc.CourseId , tc.TeacherId});
         }
     }
 }
