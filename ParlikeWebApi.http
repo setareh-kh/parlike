@@ -1,0 +1,6 @@
+@ParlikeWebApi_HostAddress = http://localhost:5101
+
+GET {{ParlikeWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
