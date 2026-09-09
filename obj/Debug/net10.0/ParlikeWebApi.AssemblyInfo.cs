@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParlikeWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8c88d733d9f91e33b58e30df38b6ac1db06b633")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+584555cc366e1634cc3b6c9e56b8750d5dfe51a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParlikeWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParlikeWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
