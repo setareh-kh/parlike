@@ -1,6 +1,6 @@
 using ParlikeWebApi.Models;
 
-namespace ParlikeWebApi.Repositories.Repository;
+namespace ParlikeWebApi.Repositories;
 public interface IUserRepository:IBaseRepository<User>
 {
     
