@@ -1,18 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using ParlikeWebApi.Models;
-
+using ParlikeWebApi.Installer;
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-builder.Services.AddSwaggerGen();
-// connecting DB
-var myConnection= builder.Configuration.GetConnectionString("MySqlConnection")  ?? throw new InvalidOperationException(
-        "Connection string 'MySqlConnection' was not found.");
-builder.Services.AddDbContext<SqlContext>(opts=>opts.UseMySQL(myConnection));
+builder.Services.InstallServicesInAssembly(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
