@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ParlikeWebApi.Models
 {
-    public class Category
+    public class Category:ISqlEntity
     {
         public int Id {get; set;}
         [MaxLength(250)]

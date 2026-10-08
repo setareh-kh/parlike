@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace ParlikeWebApi.Models
 {
-    public class Episode
+    public class Episode:ISqlEntity
     {
         public int Id { get; set; }
         [MaxLength(250)]

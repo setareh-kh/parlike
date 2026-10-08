@@ -7,7 +7,7 @@ namespace ParlikeWebApi.Models
         Admin,
         Student
     }
-    public class User
+    public class User:ISqlEntity
     {
         public int Id { get; set; }
         [ MaxLength(250)]
