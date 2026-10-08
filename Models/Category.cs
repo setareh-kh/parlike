@@ -2,17 +2,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ParlikeWebApi.Models
 {
-    public class Catogory
+    public class Category
     {
         public int Id {get; set;}
         [MaxLength(250)]
         public required string Name {get; set;}
         public required DateTime CreatedAt {get; set;}
-        public ICollection<CourseCatogory>? CourseCatogories {get; set;}
-        public ICollection<Catogory>? Children {get; set;}=new List<Catogory>();
+        public ICollection<CourseCategory>? CourseCategories {get; set;}
+        public ICollection<Category>? Children {get; set;}=new List<Category>();
         //FK:Selef-Refrence
         public int? ParentId {get; set;}
-        public Catogory? Parent {get; set;}
+        public Category? Parent {get; set;}
         
     }
 }
